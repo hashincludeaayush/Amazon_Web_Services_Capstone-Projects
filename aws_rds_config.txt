@@ -1,0 +1,15 @@
+aayush-capstone-rds-db
+mysql -u aayush -p -h aayush-s-capstone-rds-db.cv4eg3dvphsp.us-east-2.rds.amazonaws.com
+
+SHOW DATABASES;
+USE CREATE DATABASE;
+
+
+aws s3 ls
+aws s3 ls s3:aayush-singh-capstone-s3
+aws s3 cp localpath s3-bucket-path
+aws s3 cp test_s3_file_from_ec2_private_sever s3://aayush-singh-capstone-s3
+
+
+
+

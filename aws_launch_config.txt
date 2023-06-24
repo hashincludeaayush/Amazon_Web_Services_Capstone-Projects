@@ -1,0 +1,13 @@
+#!/bin/bash
+sudo su
+yum update -y
+yum install httpd -y
+service httpd start
+chkconfig httpd on
+touch /var/www/html/index.html
+echo "<html><h1>Hey there! This is "aayush" path optional Webserver 1 :) i.e. $(hostname -i) launched successfully :) </h1></html>" > /var/www/html/index.html
+amazon-linux-extras install epel -y
+yum install stress -y
+cd /var/www/html/
+mkdir aayush
+cp index.html aayush/
